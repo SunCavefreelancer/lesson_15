@@ -41,3 +41,12 @@
 	font-display: swap;
 }
 
+@font-face {
+	font-family: 'causten-bold';
+	src:
+		url("..//fonts/causten-bold.woff2") format("woff2"),
+		url("..//fonts/causten-bold.woff") format("woff");
+	wont-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
