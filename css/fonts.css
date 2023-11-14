@@ -1,0 +1,21 @@
+/* ======Підключення вручну======= */
+/* Шрифт № 1 */
+@font-face {
+	font-family: 'Causten400';
+	src:
+		url("..//fonts/Causten-Regular.woff2") format("woff2"),
+		url("..//fonts/Causten-Regular.woff") format("woff");
+	wont-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Causten500';
+	src:
+		url("..//fonts/Causten-Medium.woff2") format("woff2"),
+		url("..//fonts/Causten-Medium.woff") format("woff");
+	wont-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}

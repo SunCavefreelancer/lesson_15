@@ -1,0 +1,155 @@
+/*=======Підключення шрифтів=======*/
+@import url("fonts.css");
+
+/*=======Скидання стилів=======*/
+@import url("reset.css");
+
+
+
+
+
+/* body {}*/
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+} 
+
+
+
+
+/* ---------------------основні стилі------------------ */
+.header {
+	max-width: 1440px;
+	padding: 34px 100px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+.header__container {
+
+}
+.header__body {
+	display: flex;
+}
+
+ /* logo */
+.header__logo {
+	margin-right: 163.84px;
+	width: 91px;
+	height: 45px;
+}
+.header__logo img {
+	max-width: 100%;
+}
+
+/* search */
+.header__search {
+	padding: 12px 48px;
+	border-radius: 8px;
+	background-color: #F6F6F6;
+	display: flex;
+	align-items: center;
+	color: #807D7E;
+	font-family: 'Causten500';
+	font-size: 18px;
+	font-weight: 500;
+	transition: 0.5s;
+	margin-right: 210px;
+}
+.header__search img {
+	margin-right: 12px;	
+}
+.header__search:hover {
+	background-color: #8A33FD;
+	color: #FFF;
+}
+
+
+/* language */
+.header__language {
+	margin-right: 60px;
+}
+.language:hover .language__list2  {
+	visibility: visible;
+	cursor: pointer;
+}
+.language {
+
+	display: flex;
+
+}
+.language__list {
+	width: 206px;
+	height: 22px;
+}
+.language__link {
+	color: #333;
+	font-family: 'Causten400';
+	font-size: 18px;
+}
+.language__link::before {
+	content: "";
+	display: inline-block;
+	background: url(../img/row.svg);
+	width: 10px;
+	height: 5px;
+	padding: 9px 7px;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 19px;
+
+	align-items: center;
+	justify-content: center;
+}
+
+.language__list2 {
+	visibility: hidden;
+}
+.language__link2 {
+	color: #333;
+	font-family: 'Causten400';
+	font-size: 18px;
+}
+
+/* buttons */
+.header__buttons {
+	display: flex;
+}
+.header__button {
+	padding: 12px 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+}
+.header__button--color {
+	border-radius: 8px;
+	background-color: #8A33FD;
+	color: #FFF;
+	font-family: 'Causten500';
+	font-size: 18px;
+	font-weight: 500;
+	margin-right: 29px;
+	width: 140px;
+	height: 46px;
+
+}
+.header__button--color:hover {
+	color: #8A33FD;
+	background-color: #FFF;
+	border: 1px solid #3C4242;
+}
+.header__button--white {
+	border-radius: 8px;
+	border: 1px solid #3C4242;
+	color: #8A33FD;
+	background-color: #FFF;
+	width: 156px;
+	height: 46px;
+}
+.header__button--white:hover {
+	background-color: #8A33FD;
+	color: #FFF;
+}
+
+/* -----------------------------header------------------------------ */
