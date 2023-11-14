@@ -74,9 +74,8 @@
 	cursor: pointer;
 }
 .language {
-
 	display: flex;
-
+	align-items: center;
 }
 .language__list {
 	width: 206px;
