@@ -15,8 +15,13 @@
 .wrapper {
 	overflow: clip;
 	min-height: 100%;
-} 
 
+	display: flex;          /* прижимаем футер книзу */
+	flex-direction: column; /* прижимаем футер книзу */
+} 
+.wrapper > main {
+	flex-grow: 1;          /* прижимаем футер книзу */
+}
 
 
 
@@ -236,8 +241,12 @@ h1::before {
 	line-height: 27.93px; /* 156.25% */
 	letter-spacing: -0.715px;
 	margin-bottom: 3.9px;
+	transition: 0.5s;
 
 	flex-grow: 1; 		/* прижали item-product__text книзу карточки */
+}
+.item-product__title:hover {
+	color: #8A33FD;
 }
 .item-product__title:not(:last-child){
 	margin-bottom: 10px;
@@ -269,7 +278,7 @@ h1::before {
 }
 
 .page-orders__container {
-	max-width: 1270px;
+	max-width: 925px;
 	margin: 0 auto;
 	padding: 0px 15px;
 }
@@ -332,7 +341,12 @@ h3 {
 	width: 96px;
 	height: 96px;
 	border-radius: 4px;
+	transition: 0.5s;
 }
+.view__product img:hover {
+	opacity: 0.7;
+}
+
 
 .view__description {
 	padding: 3px 0px;
@@ -402,7 +416,7 @@ span {
 }
 
 .page-wishlist__container {
-	max-width: 1270px;
+	max-width: 925px;
 	margin: 0 auto;
 	padding: 0px 15px;
 }
@@ -419,9 +433,13 @@ span {
 }
 .order__product {	
 	display: flex;
+	transition: 0.5s;
 }
 .order__product img {
 	margin-right: 36px;
+}
+.order__product:hover {
+	opacity: 0.7;
 }
 .order__product::before {
 	content: '';
@@ -503,4 +521,22 @@ span {
 .description__button:hover {
 	background-color: #F6F6F6;
 	color: #8A33FD;
+}
+
+
+
+/* --------------------------------footer------------------------- */
+.footer {
+	height: 80px;
+	width: 100%;
+	background-color: #8A33FD;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+	font-size: 30px;
+	transition: 0.5s;
+}
+.footer:hover {
+	color: #868181;
 }
